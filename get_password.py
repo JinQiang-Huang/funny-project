@@ -40,6 +40,7 @@ def generate_password(length):
     remain_number = length - len(li)
     lower_value = get_lower(remain_number)
     li.extend(lower_value)
+
     random.shuffle(li)
     password_value = ''.join(li)
 
